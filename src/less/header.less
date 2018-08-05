@@ -1,0 +1,59 @@
+@colorfff:#fff;
+@colorBlue:#0099dd;
+//辅助导航
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-inverse{
+  .navbar-brand{
+    color: @colorfff;
+    font-size: 26px;
+    span{
+      font-size: 18px;
+      margin-right: 6px;
+    }
+  }
+  .tooltip{
+    img{
+      width: 100px;
+    }
+  }
+  .navbar-nav{
+    &>li{
+
+      &>a{
+         color: @colorfff;
+        &:hover{
+           color: @colorBlue;
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}
+//主导航
+
+.navbar-default{
+  line-height: 40px;
+  margin-bottom: 10px;
+  .navbar-header {
+    #log {
+      line-height: 60px;
+    }
+  }
+  .navbar-nav{
+      margin-left: 20px;
+    &>li{
+      &>a{
+        font-size: 16px;
+        line-height:40px;
+        color: #777;
+        &:hover{
+          background: #e7e7e7;
+        }
+      }
+    }
+  }
+
+}

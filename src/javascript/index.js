@@ -1,0 +1,3 @@
+$(function () {
+    $('#contanctus').tooltip()
+});
