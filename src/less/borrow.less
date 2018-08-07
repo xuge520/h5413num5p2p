@@ -1,0 +1,81 @@
+@import url("header.less");
+@colorwhite:#fff;
+@bgcolor:#00a8ff;
+@bghovercolor:#337ab7;
+.borrow{
+    .panel{
+        margin-top:10px;
+        box-shadow: none;
+        .panel-heading{
+            .panel-title{
+                font-size:24px;
+                color:@colorwhite;
+            }
+        }
+        .panel-body{
+            background-color: #f9f9f9;
+            &>P:nth-of-type(1){
+                font-size:16px;
+            }
+            &>P:nth-of-type(2){
+                font-size:14px;
+            }
+            &>P:nth-of-type(3){
+                font-size:14px;
+                color:#737373;
+            }
+            &>p:nth-of-type(4){
+                width:100%;
+                margin-top:10px;
+                margin-bottom:0px;
+                text-align: center;
+                a{
+                    height:30px;
+                    line-height: 30px;
+                    width:80px;
+                    border-radius:20px;
+                    text-decoration: none;
+                    color:@colorwhite;
+                    display:inline-block;
+                    text-align: center;
+                    background-color: @bgcolor;
+                    &:hover{
+                        background-color: @bghovercolor;
+                    }
+                }
+            }
+            ul{
+                padding-left:10px;
+                margin:0px;
+                li{
+                    list-style: none;
+                    padding-left:20px;
+                    background:url('../../images/sequare.png') no-repeat;
+                }
+            }
+        }
+    }
+}
+.borrow{
+    .panel:nth-of-type(1){
+        .panel-heading{
+            background:#40d47e;
+        }
+    }
+}
+.borrow{
+    .panel:nth-of-type(2){
+        .panel-heading{
+            background:#ec7e20;
+        }
+    }
+}
+.borrow{
+    .panel:nth-of-type(3){
+        .panel-heading{
+            background:#2ca2ee;
+        }
+    }
+}
+
+@import url("footer.less");

@@ -1,0 +1,112 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 26px;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 18px;
+  margin-right: 6px;
+}
+.navbar-inverse .tooltip img {
+  width: 100px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #0099dd;
+  text-decoration: underline;
+}
+.navbar-default {
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.navbar-default .navbar-header #log {
+  line-height: 60px;
+}
+.navbar-default .navbar-nav {
+  margin-left: 20px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  line-height: 40px;
+  color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background: #e7e7e7;
+}
+.userheadpic {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  font-size: 16px;
+  color: #999;
+}
+ul li span {
+  color: #09d;
+  padding-left: 20px;
+}
+ul.borrow_info_mid li {
+  line-height: 34px;
+}
+ul.borrow_info_mid h3 {
+  margin-top: 0px;
+  color: #09d;
+}
+ul.borrow_info_right li h3 {
+  font-size: 20px;
+  color: #09d;
+}
+.borrower-info ul,
+.prove-info ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.borrower-info ul li,
+.prove-info ul li {
+  width: 300px;
+}
+.invest-record .quota {
+  color: #09d;
+}
+@media all and (max-width: 620px) {
+  .smallhide {
+    display: none;
+  }
+}
+#footerBox {
+  background: #f8f8f8;
+}
+#footerBox #content {
+  padding-top: 30px;
+}
+#footerBox #content img {
+  max-width: 150px;
+}
+@media all and (max-width: 700px) {
+  .hideen {
+    display: none;
+  }
+  #logo {
+    margin: 0px 0 0 12px;
+  }
+  #logo img {
+    margin-top: 10px;
+  }
+}
+@media all and (min-width: 700px) {
+  #logo img {
+    margin-top: 16px;
+  }
+}
