@@ -14,6 +14,9 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css"/>
 		<!--引入自定义样式-->
 		<link rel="stylesheet" type="text/css" href="dist/css/min/invest.min.css"/>
+		<!--引入jquery-->
+		<script src="lib/jQuery/jquery-1.11.0.js"></script>
+	
 	</head>
 	<body>
 		<!--引入头部-->
@@ -71,8 +74,7 @@
 		<?php
 		include_once ("footer.php");
 		?>
-		<!--引入jquery-->
-		<script src="lib/jQuery/jquery-1.11.0.js"></script>
+		
 		<!--引入bootstrapjs-->
 		<script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 		<!--自定义特效-->
