@@ -1,17 +1,118 @@
 @import url("header.less");
-//左侧导航
+@import url("personalNav.less");
 #personalBox{
     margin-bottom: 20px;
-    .leftNav{
-        .list-group{
-       margin-bottom: 0;
-       .list-group-item:last-child,.list-group-item:first-child{
-           border-radius: 0;
-       }
+}
+//右侧内容
+#rightBox{
+    padding: 0;
+}
+.page-header{
+     margin: 0;
+     font-size: 18px;
+   .headerleft,.headerright{
+       float: left;
+   }
+   .headerleft{
+       margin-right: 20px;
+       padding: 8px;
+       border: 1px solid #ccc;
+       &>img{
+           max-width: 100px;
+       }   
+   }
+     .headerright{
+          margin-top: 12px; 
+       }  
+}
+.money{
+    margin: 10px 0 20px 0;
+    &>p{
+        font-size: 18px;
+        &>span{
+            color:#337ab7;
+        }
+    }
+}
+.btnGroup{
+    margin:30px 0;
+}
+.iconGroup{
+    border-bottom: 1px solid #eee;
+    .iconone:last-child{
+        margin-top: 20px;
+    }
+    .iconone{
+        padding-left: 0;
+        &>img{
+            max-width: 100px;
+            float: left;
+            margin-top: 10px;
+        }
+         .centertext{
+             float: left;
+             margin-left: 10px;
+            h4{
+            font-weight: bold;
+        } 
+         }
+       &>p{
+           float: left;
+//         font-size: 8px;
+       } 
+    }
+}
+
+//模态框
+#myModal{
+    .modal-body{
+        text-align: center;
+        .modelImg{
+           width: 100px;
+           
+          }
+           .modalText{
+             font-size: 18px;
+             #num{
+                 color: red;
+             }
             }
     }
-   .titleactive{
-       background: #E7E7E7;
-   }
+   
+}
+//媒体查询
+@media all and(max-width:1200px){
+    .iconGroup{
+        .iconone:last-child{
+            margin-top: 0;
+        }
+    }
+
+}
+@media all and(max-width:993px){
+    .iconGroup{
+       .iconone{
+          &>p{
+           float: right;
+           line-height: 69px;
+
+       }  
+       }
+    }
+    
+}
+@media all and(max-width:768px){
+    .iconGroup{
+       .iconone{
+         .hiddenText{
+             display: none;
+         }
+       }
+    }
+}
+@media all and(max-width:480px){
+    .btnGroup{
+        width: 100%;
+    }
 }
 @import url("footer.less");

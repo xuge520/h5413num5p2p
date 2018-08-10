@@ -1,0 +1,15 @@
+.leftNav .list-group {
+  margin-bottom: 0;
+}
+.leftNav .list-group .list-group-item:last-child,
+.leftNav .list-group .list-group-item:first-child {
+  border-radius: 0;
+}
+.titleactive {
+  background: #E7E7E7;
+}
+@media all and (max-width: 768px) {
+  .leftNav {
+    padding: 0;
+  }
+}

@@ -1,0 +1,56 @@
+@import url("header.less");
+@import url("personalNav.less");
+#personalBox{
+    margin-bottom: 20px;
+}
+//右侧内容
+#rightBox{
+    padding: 0;
+    .panel-body{
+      padding: 0;
+      .form-group{
+          margin-left: 50px;
+      }
+      input{
+          width: 46%;
+      }
+      .tltle{
+          text-align: center;
+          color: #a94442;
+
+      }
+      #address{
+          width: 60%;
+      }
+      .um{
+          margin-right: 14px;
+      }
+      .username{
+          line-height: 34px;
+          font-size: 16px;
+          margin-bottom: 0;
+          
+      }
+      #sex,#paper{
+          width: 46%;
+          height: 34px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+      }
+    }
+}
+
+//媒体查询
+
+@media all and(max-width: 768px){
+    .um{
+        height: 34px;
+        line-height: 34px;
+        float: left;
+    }
+    .username{
+       float: left; 
+    }
+}
+
+@import url("footer.less");

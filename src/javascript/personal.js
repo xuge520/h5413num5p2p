@@ -1,0 +1,10 @@
+$(function(){
+	//关闭按钮事件
+	$("#close").click(function(){
+		location.href="index.php";
+	});
+	//login事件
+	$("#open").click(function(){
+		location.href="login.php";
+	});
+})

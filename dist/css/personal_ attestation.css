@@ -59,92 +59,45 @@
 #rightBox {
   padding: 0;
 }
-.page-header {
-  margin: 0;
-  font-size: 18px;
+#rightBox .panel-body {
+  padding: 0;
 }
-.page-header .headerleft,
-.page-header .headerright {
-  float: left;
+#rightBox .panel-body .form-group {
+  margin-left: 50px;
 }
-.page-header .headerleft {
-  margin-right: 20px;
-  padding: 8px;
+#rightBox .panel-body input {
+  width: 46%;
+}
+#rightBox .panel-body .tltle {
+  text-align: center;
+  color: #a94442;
+}
+#rightBox .panel-body #address {
+  width: 60%;
+}
+#rightBox .panel-body .um {
+  margin-right: 14px;
+}
+#rightBox .panel-body .username {
+  line-height: 34px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#rightBox .panel-body #sex,
+#rightBox .panel-body #paper {
+  width: 46%;
+  height: 34px;
+  border-radius: 4px;
   border: 1px solid #ccc;
 }
-.page-header .headerleft > img {
-  max-width: 100px;
-}
-.page-header .headerright {
-  margin-top: 12px;
-}
-.money {
-  margin: 10px 0 20px 0;
-}
-.money > p {
-  font-size: 18px;
-}
-.money > p > span {
-  color: #337ab7;
-}
-.btnGroup {
-  margin: 30px 0;
-}
-.iconGroup {
-  border-bottom: 1px solid #eee;
-}
-.iconGroup .iconone:last-child {
-  margin-top: 20px;
-}
-.iconGroup .iconone {
-  padding-left: 0;
-}
-.iconGroup .iconone > img {
-  max-width: 100px;
-  float: left;
-  margin-top: 10px;
-}
-.iconGroup .iconone .centertext {
-  float: left;
-  margin-left: 10px;
-}
-.iconGroup .iconone .centertext h4 {
-  font-weight: bold;
-}
-.iconGroup .iconone > p {
-  float: left;
-}
-#myModal .modal-body {
-  text-align: center;
-}
-#myModal .modal-body .modelImg {
-  width: 100px;
-}
-#myModal .modal-body .modalText {
-  font-size: 18px;
-}
-#myModal .modal-body .modalText #num {
-  color: red;
-}
-@media all and (max-width: 1200px) {
-  .iconGroup .iconone:last-child {
-    margin-top: 0;
-  }
-}
-@media all and (max-width: 993px) {
-  .iconGroup .iconone > p {
-    float: right;
-    line-height: 69px;
-  }
-}
 @media all and (max-width: 768px) {
-  .iconGroup .iconone .hiddenText {
-    display: none;
+  .um {
+    height: 34px;
+    line-height: 34px;
+    float: left;
   }
-}
-@media all and (max-width: 480px) {
-  .btnGroup {
-    width: 100%;
+  .username {
+    float: left;
   }
 }
 #footerBox {
