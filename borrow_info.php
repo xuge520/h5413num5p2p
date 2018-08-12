@@ -14,7 +14,7 @@
     <!--引入bootstrap样式-->
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--引入自定义样式-->
-    <link href="dist/css/min/borrow_info.min.css" rel="stylesheet">
+    <link href="dist/css/borrow_info.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <?php
 	include_once("header.php");
 ?>
-    <div class="container">
+    <div class="container main-container">
         <div class="row">
             <div class="col-md-3 col-xs-12">
                 <div class="panel panel-default">
