@@ -15,7 +15,7 @@
     <!--引入自定义样式-->
     <link href="dist/css/index.css" rel="stylesheet">
     <!-- 引入轮播插件 -->
-    <script src="./src/javascript/toucher.js"></script>
+    <!--<script src="./src/javascript/toucher.js"></script>-->
 </head>
 <body>
 <?php
