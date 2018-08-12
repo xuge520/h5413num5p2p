@@ -54,16 +54,8 @@
 							<th>操作</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">张三</th>
-							<td>筹集嫖资</td>
-							<td class="text-info">10.00%</td>
-							<td class="text-info">2,000.00</td>
-							<td>按月分期还款</td>
-							<td>100.00%</td>
-							<td><button type="button" class="btn btn-danger btn-sm">查看</button></td>
-						</tr>
+					<tbody id="investdata">
+						
 					</tbody>
 				</table>
 			</div>
@@ -74,10 +66,33 @@
 		<?php
 		include_once ("footer.php");
 		?>
-		
+		<script src="lib/jqueryTemplate/jquery.tmpl.js" type="text/javascript"></script>
 		<!--引入bootstrapjs-->
 		<script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 		<!--自定义特效-->
 		<script src="src/javascript/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/html" id="scrtem">
+			<tr>
+				<th scope="row">${userid}</th>
+				<td>${borrowTitle}</td>
+				<td class="text-info">${currentRate}%</td>
+				<td class="text-info">${borrowAmount}</td>
+				<td>${repayment}</td>
+				<td>${(alreadyAmount/borrowAmount*100).toFixed(2)}%</td>
+				<td><button type="button" class="btn btn-danger btn-sm" href="borrow_info.php?id=${borrowid}">查看</button></td>
+			</tr>
+			
+		</script>
+		<script type="text/javascript">
+			$.get('api/getInvestList.php',function(dataadd){
+//				console.log(dataadd)
+//				console.log(dataadd[0].borrowid)
+				var htmlstr=$('#scrtem').tmpl(dataadd)
+				$('#investdata').html(htmlstr)
+				
+			},'json')
+		</script>
+	
+	
 	</body>
 </html>
