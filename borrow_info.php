@@ -31,8 +31,8 @@
                     </div>
                     <div class="panel-body">
                         <img class="userheadpic" src="images/head_icon.jpg">
-                        <p class="text-center">
-                            <a href="#">zs</a>
+                        <p class="text-center username">
+                            zs
                         </p>
                         <br>
                         <div>
@@ -57,7 +57,7 @@
 
                 <ul class="borrow_info_mid">
                     <li>
-                        <h3 class="text-blue">zs借款
+                        <h3 class="text-blue"><i class="username">zs</i>借款
                             <small>
                                 <label class="label label-primary">信</label>
                             </small>
@@ -260,6 +260,7 @@
 <script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 <!--引入js-->
 <script src="dist/js/index.min.js" type="text/javascript"></script>
+<script src="./dist/js/borrow_info.min.js"></script>
 
 </html>
 

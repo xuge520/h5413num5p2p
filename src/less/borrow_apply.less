@@ -2,6 +2,9 @@
 @colorgrey:#f5f5f5;
 @colorblue:#09d;
 // 左侧栏
+body{
+    overflow-x: hidden;
+}
 .left-sidebar{
     &>li{
         padding:0;
@@ -17,6 +20,7 @@
     } 
 }
 .list-group-sub{
+    display:none;
     li{
         list-style:none;
         height:40px;
@@ -60,23 +64,47 @@
         
     }
 }
+.btn-switch{
+    display:none;
+}
 @media all and (max-width:768px){
+    .main-container{
+        overflow-x: hidden;
+         // 小频按钮切换右侧导航栏
+    .main-subContainer{
+        width:200%;
+        transition: all 0.8s linear;
+        overflow-x: hidden;
+        margin-left:-50%;
+    }
+    .main-subContainer.active{
+        margin-left:0%;
+    }
+    .btn-switch{
+        display:inline-block;
+    }
     .borrow-form-tips{
         position:static !important;
     }
+    }
 }
+
 .input-box{
     position:relative;
     padding-right:0px;
     input,select{
         padding-right:0px;
-        border-right:none;
+        // border-right:none;
         border-bottom-right-radius:0px;
         border-top-right-radius:0px;
     }
+    .borrowclass{
+        width:100%;
+    }
     .unit{
         display:inline-block;
-        height:100%;
+        border-left:none;
+        height:34px;
         width:34px;
         font-size: 14px;
         line-height:34px;

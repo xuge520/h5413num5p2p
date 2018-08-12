@@ -38,6 +38,9 @@
 .navbar-default .navbar-nav > li > a:hover {
   background: #e7e7e7;
 }
+body {
+  overflow-x: hidden;
+}
 .left-sidebar > li {
   padding: 0;
   border: 1px solid #ddd;
@@ -49,6 +52,9 @@
   padding: 10px 15px;
   display: inline-block;
   background: #f5f5f5;
+}
+.list-group-sub {
+  display: none;
 }
 .list-group-sub li {
   list-style: none;
@@ -87,8 +93,26 @@
   top: 10px;
   margin-bottom: 10px;
 }
+.btn-switch {
+  display: none;
+}
 @media all and (max-width: 768px) {
-  .borrow-form-tips {
+  .main-container {
+    overflow-x: hidden;
+  }
+  .main-container .main-subContainer {
+    width: 200%;
+    transition: all 0.8s linear;
+    overflow-x: hidden;
+    margin-left: -50%;
+  }
+  .main-container .main-subContainer.active {
+    margin-left: 0%;
+  }
+  .main-container .btn-switch {
+    display: inline-block;
+  }
+  .main-container .borrow-form-tips {
     position: static !important;
   }
 }
@@ -99,13 +123,16 @@
 .input-box input,
 .input-box select {
   padding-right: 0px;
-  border-right: none;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
+.input-box .borrowclass {
+  width: 100%;
+}
 .input-box .unit {
   display: inline-block;
-  height: 100%;
+  border-left: none;
+  height: 34px;
   width: 34px;
   font-size: 14px;
   line-height: 34px;
