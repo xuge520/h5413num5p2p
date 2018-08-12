@@ -1,3 +1,12 @@
+$.get('./api/checkState.php',function(result){
+    console.log(result);
+
+    if(result.isSuccess){
+        $('.username').text(result.username);
+    }else{
+        window.location.href = './login.php';
+    }
+},'json')
 //左侧导航栏效果
 $(document).ready(function () {
     $('.mainclass').click(function () {

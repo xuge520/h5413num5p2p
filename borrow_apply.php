@@ -17,6 +17,7 @@
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--引入自定义样式-->
     <link href="dist/css/min/borrow_apply.min.css" rel="stylesheet">
+   
 </head>
 
 <body>
@@ -232,6 +233,8 @@
 <script src="lib/jQuery/jquery-1.11.0.js"></script>
 <!--引入bootstrapjs-->
 <script src="lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+ <!-- 引入登录状态验证的js -->
+ <script src="./src/javascript/checkState.js"></script>
 <!--引入js-->
 <script src="dist/js/index.min.js" type="text/javascript"></script>
 <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
